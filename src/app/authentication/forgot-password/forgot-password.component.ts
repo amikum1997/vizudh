@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForgotPasswordComponent implements OnInit {
 
+  public show: boolean = false;
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
+  showPassword() {
+    this.show = !this.show;
+  }
 }
