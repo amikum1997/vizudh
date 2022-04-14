@@ -18,4 +18,12 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
     AuthenticationRoutingModule
   ]
 })
-export class AuthenticationModule { }
+
+
+export class AuthenticationModule {
+  
+  constructor(){
+    console.log('Auth Module Loaded');
+  }
+ }
+

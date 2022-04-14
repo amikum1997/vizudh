@@ -8,13 +8,16 @@ import { content } from "./shared/routes/routes";
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'sample-page',
-    pathMatch: 'full'
+    loadChildren: () => import('./authentication/authentication.module').then(m => m.AuthenticationModule)
   },
   {
-    path: '',
+    path: 'user',
     component: ContentComponent,
     children: content
+  },
+  {
+    path: 'builder',
+    loadChildren: () => import('./builder/builder.module').then(m => m.BuilderModule)
   },
   {
     path: '**',
