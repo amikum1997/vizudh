@@ -32,6 +32,8 @@ import { ShowOptionsDirective } from './directives/show-options.directive';
 // Services
 import { LayoutService } from './services/layout.service';
 import { NavService } from './services/nav.service';
+import { Error404Component } from './error404/error404.component';
+import { MaintenanceComponent } from './maintenance/maintenance.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,9 @@ import { NavService } from './services/nav.service';
     BookmarkComponent,
     CartComponent,
     MessageBoxComponent,
-    MyAccountComponent
+    MyAccountComponent,
+    Error404Component,
+    MaintenanceComponent
   ],
   imports: [
     CommonModule,
